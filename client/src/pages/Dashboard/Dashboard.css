@@ -1,0 +1,136 @@
+.dashboard {
+  width: 100%;
+}
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.dashboard-login-btn {
+  max-width: 150px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  background-color: #191815;
+  color: #fbfbfb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dashboard-tracker-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.form-container {
+  background-color: #fbfbfb;
+  padding: 4%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 4px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #191815;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fbfbfb;
+  margin-bottom: 4px;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #191815;
+}
+
+.form-submit-btns {
+  display: flex;
+  width: 100%;
+}
+
+.form-submit-btn {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #191815;
+  color: #fbfbfb;
+  border: none;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-submit-btn:hover {
+  background-color: #313131;
+}
+
+.dashboard-tracker-stats {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.dashboard-tracker-stats {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tracked-amounts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tracked-high {
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.tracked-low {
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.tracked-expense {
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+@media (max-width: 768px) {
+  .dashboard-tracker-form {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .tracked-amounts {
+    grid-template-columns: 1fr;
+  }
+}
