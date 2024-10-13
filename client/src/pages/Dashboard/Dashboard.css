@@ -92,7 +92,6 @@ select:focus {
   padding: 4%;
   color: #000;
   border-radius: 35px;
-  box-shadow: 6px 6px #000;
   overflow: hidden;
 }
 .tracked-high {
