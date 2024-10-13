@@ -33,17 +33,15 @@ const Transaction = () => {
                   {" , "}
                   <small>{new Date(record.date).toLocaleTimeString()}</small>
                 </div>
-                <div
-                className="transaction-delete"
-                onClick={() => deleteRecord(record._id)}
-              >
-                x
-              </div>
               </div>
 
               <div className="transaction-details">
                 <small>{record.category}</small>{" "}
                 <small>({record.paymentMethod})</small>
+              </div>
+              <div className="transaction-delete"
+                onClick={() => deleteRecord(record._id)}>
+                x
               </div>
             </li>
           ))
