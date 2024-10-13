@@ -19,7 +19,6 @@
   text-transform: capitalize;
 }
 .transaction-delete {
-  right: 20px;
   font-size: 24px;
   color: #1d1814;
   cursor: pointer;
