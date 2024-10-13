@@ -63,20 +63,14 @@ select:focus {
 }
 .form-submit-btn {
   flex: 1;
-  background-color: #ccc;
-  color: #1d1814;
+  background-color: #1d1814;
+  color: #fbfbfb;
   border: none;
   border-radius: 25px;
-  box-shadow: 4px 4px #000;
   padding: 10px 2%;
   cursor: pointer;
   position: relative;
   transition: all 0.2s;
-}
-.form-submit-btn:active {
-  top: 4px;
-  left: 4px;
-  box-shadow: -4px -4px #000;
 }
 .dashboard-tracker-stats {
   display: grid;
