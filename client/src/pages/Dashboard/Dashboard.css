@@ -43,6 +43,7 @@ select {
   padding: 10px 2%;
   border: 1px solid #ccc;
   border-radius: 25px;
+  background-color: #fbfbfb;
 }
 .form-group select {
   appearance: none;
