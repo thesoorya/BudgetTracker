@@ -15,12 +15,6 @@ const Transaction = () => {
         {records && records.length > 0 ? (
           [...records].reverse().map((record) => (
             <li className="transaction-item" key={record._id}>
-              <div
-                className="transaction-delete"
-                onClick={() => deleteRecord(record._id)}
-              >
-                <MdOutlineDelete />
-              </div>
               <div className="transaction-amount">
                 <p
                   className={`t-amount ${
@@ -39,6 +33,12 @@ const Transaction = () => {
                   {" , "}
                   <small>{new Date(record.date).toLocaleTimeString()}</small>
                 </div>
+                <div
+                className="transaction-delete"
+                onClick={() => deleteRecord(record._id)}
+              >
+                x
+              </div>
               </div>
 
               <div className="transaction-details">
