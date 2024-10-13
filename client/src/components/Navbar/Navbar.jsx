@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { SignedIn, UserButton, useUser } from "@clerk/clerk-react";
+import { SignedOut, SignInButton } from "@clerk/clerk-react";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
   const { user } = useUser();
@@ -24,24 +26,21 @@ const Navbar = () => {
           <p>Transaction</p>
         </Link>
       </div>
+      <div className="hamburger" onClick={toggleMenu}>
+        <IoMdArrowDropdown />
+      </div>
       <div className="navbar-auth">
         {user ? (
           <SignedIn>
             <UserButton />
           </SignedIn>
         ) : (
-          <Link to="/auth" className="dash-login">
-            Login
-          </Link>
+          <SignedOut>
+            <SignInButton mode="modal" style={{all: 'unset', cursor: 'pointer'}} />
+          </SignedOut>
         )}
       </div>
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className={`line ${menuOpen ? "open" : ""}`}></div>
-        <div className={`line ${menuOpen ? "open" : ""}`}></div>
-        <div className={`line ${menuOpen ? "open" : ""}`}></div>
-      </div>
 
-      
     </nav>
   );
 };

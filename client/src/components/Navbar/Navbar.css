@@ -4,11 +4,12 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 1%;
-  color: #f5f5e9;
+  background-color: #1D1814;
+  color: #fbfbfb;
   position: relative;
 }
 .auth-navbar a {
-  color: #f5f5e9;
+  color: #fbfbfb;
 }
 .auth-nav-links {
   display: flex;
@@ -25,15 +26,8 @@
 }
 .hamburger {
   display: none;
-  flex-direction: column;
   cursor: pointer;
-}
-.line {
-  width: 25px;
-  height: 3px;
-  background-color: #f5f5e9;
-  margin: 3px 0;
-  transition: 0.4s;
+  font-size: 24px;
 }
 @media (max-width: 768px) {
   .auth-navbar {
@@ -45,7 +39,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #14162f;
+    background-color: #1D1814;
     width: 100%;
     padding: 10px 0;
     z-index: 10;
