@@ -38,7 +38,6 @@ const Store = ({ children }) => {
       }
     } catch (error) {
       console.error(error);
-      toast.error("An error occurred while fetching records");
     }
   };
 
