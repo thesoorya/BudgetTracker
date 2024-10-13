@@ -9,7 +9,7 @@ const Store = ({ children }) => {
   const { user } = useUser();
   const [records, setRecords] = useState([]);
 
-  const baseURL = "http://localhost:5000/api/finance";
+  const baseURL = "https://budgettracker-server-y6kp.onrender.com";
 
   useEffect(() => {
     if (user && user.id) {
