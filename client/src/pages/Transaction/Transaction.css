@@ -1,0 +1,45 @@
+.transaction-container {
+  color: #1d1814;
+}
+.transaction-title {
+  padding: 1%;
+  font-size: 28px;
+  font-weight: 400;
+}
+.transaction-list {
+  position: relative;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  list-style: none;
+}
+.transaction-item {
+  padding: 4% 2%;
+  border-bottom: 1px solid #ccc;
+  text-transform: capitalize;
+}
+.transaction-delete {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  color: #1d1814;
+  cursor: pointer;
+}
+.t-amount {
+  font-size: 32px;
+}
+.credited {
+  color: #80ed00;
+}
+.debited {
+  color: #ff0329;
+}
+
+@media (max-width: 768px) {
+  .transaction-list {
+    grid-template-columns: 1fr;
+  }
+  .transaction-item {
+    border-right: 0;
+  }
+}
