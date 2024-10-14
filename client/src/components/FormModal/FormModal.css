@@ -1,0 +1,35 @@
+.formModal{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.formModal input, select{
+    padding: 5px 10px;
+    border: 1px solid  #ccc;
+    border-radius: 25px;
+}
+.formModal input:focus, select:focus{
+    border: 2px solid  #ccc;
+}
+.form-modal-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-modal-btns button{
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.form-modal-btns button:nth-child(1){
+    background-color: greenyellow;
+}
+.form-modal-btns button:nth-child(2){
+    background-color: #aaa;
+}
