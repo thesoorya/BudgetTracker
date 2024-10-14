@@ -18,12 +18,24 @@
   border-bottom: 1px solid #ccc;
   text-transform: capitalize;
 }
-.transaction-delete {
-  position: absolute;
-  right: 20px;
-  font-size: 24px;
+.transaction-edit, .transaction-delete {
+  margin-right: 2px;
+  font-size: 12px;
+  padding: 1px 4px;
   color: #1d1814;
+  background-color: yellow;
+  border: 1px solid #1d1814;
+  border-radius: 4px;
   cursor: pointer;
+}
+.transaction-delete {
+  background-color: orange;
+}
+.modal-edit{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .t-amount {
   font-size: 32px;

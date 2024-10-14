@@ -99,7 +99,7 @@ const Dashboard = () => {
                   <option value="" disabled>
                     Select Payment Method
                   </option>
-                  <option value="cash">UPI</option>
+                  <option value="UPI">UPI</option>
                   <option value="cash">Cash</option>
                   <option value="credit_card">Credit Card</option>
                   <option value="debit_card">Debit Card</option>

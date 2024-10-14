@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { StoreContext } from "../../context/Store";
-import { MdOutlineDelete } from "react-icons/md";
 import "./Transaction.css";
+import FormModal from "../../components/FormModal/FormModal";
 
 const Transaction = () => {
   const { records, deleteRecord } = useContext(StoreContext);
   const { user } = useUser();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedRecordId, setSelectedRecordId] = useState(null);
+
+  function handleModal(recordId) {
+    setSelectedRecordId(recordId);
+    setIsModalOpen(!isModalOpen);
+  }
 
   return (
     <div className="transaction-container">
@@ -15,12 +22,6 @@ const Transaction = () => {
         {records && records.length > 0 ? (
           [...records].reverse().map((record) => (
             <li className="transaction-item" key={record._id}>
-              <div
-                className="transaction-delete"
-                onClick={() => deleteRecord(record._id)}
-              >
-                <MdOutlineDelete />
-              </div>
               <div className="transaction-amount">
                 <p
                   className={`t-amount ${
@@ -45,6 +46,21 @@ const Transaction = () => {
                 <small>{record.category}</small>{" "}
                 <small>({record.paymentMethod})</small>
               </div>
+
+              <div>
+                <button
+                  className="transaction-edit"
+                  onClick={() => handleModal(record._id)}
+                >
+                  Edit
+                </button>
+                <button
+                  className="transaction-delete"
+                  onClick={() => deleteRecord(record._id)}
+                >
+                  Delete
+                </button>
+              </div>
             </li>
           ))
         ) : user ? (
@@ -55,6 +71,12 @@ const Transaction = () => {
           </p>
         )}
       </ul>
+
+      {isModalOpen && (
+        <div className="modal-edit">
+          <FormModal recordId={selectedRecordId} setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} />
+        </div>
+      )}
     </div>
   );
 };
