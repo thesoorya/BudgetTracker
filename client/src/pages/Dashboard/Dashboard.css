@@ -43,6 +43,7 @@ select {
   padding: 10px 2%;
   border: 1px solid #ccc;
   border-radius: 25px;
+  background-color: #fbfbfb;
 }
 .form-group select {
   appearance: none;
@@ -63,8 +64,8 @@ select:focus {
 }
 .form-submit-btn {
   flex: 1;
-  background-color: #ccc;
-  color: #1d1814;
+  background-color: #1d1814;
+  color: #fbfbfb;
   border: none;
   border-radius: 25px;
   padding: 10px 2%;
@@ -72,9 +73,12 @@ select:focus {
   position: relative;
   transition: all 0.2s;
 }
+<<<<<<< HEAD
 .form-submit-btn:hover{
   background-color: #aaa;
 }
+=======
+>>>>>>> 4c68ddb3c24e87acee16534da12f96862aae1140
 .dashboard-tracker-stats {
   display: grid;
   grid-template-columns: 1fr;
