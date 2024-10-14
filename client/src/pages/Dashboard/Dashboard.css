@@ -73,12 +73,6 @@ select:focus {
   position: relative;
   transition: all 0.2s;
 }
-<<<<<<< HEAD
-.form-submit-btn:hover{
-  background-color: #aaa;
-}
-=======
->>>>>>> 4c68ddb3c24e87acee16534da12f96862aae1140
 .dashboard-tracker-stats {
   display: grid;
   grid-template-columns: 1fr;

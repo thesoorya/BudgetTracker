@@ -46,7 +46,6 @@ const Transaction = () => {
                 <small>{record.category}</small>{" "}
                 <small>({record.paymentMethod})</small>
               </div>
-<<<<<<< HEAD
 
               <div>
                 <button
@@ -61,11 +60,6 @@ const Transaction = () => {
                 >
                   Delete
                 </button>
-=======
-              <div className="transaction-delete"
-                onClick={() => deleteRecord(record._id)}>
-                x
->>>>>>> 4c68ddb3c24e87acee16534da12f96862aae1140
               </div>
             </li>
           ))

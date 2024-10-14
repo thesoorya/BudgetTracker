@@ -18,15 +18,10 @@
   border-bottom: 1px solid #ccc;
   text-transform: capitalize;
 }
-<<<<<<< HEAD
 .transaction-edit, .transaction-delete {
   margin-right: 2px;
   font-size: 12px;
   padding: 1px 4px;
-=======
-.transaction-delete {
-  font-size: 24px;
->>>>>>> 4c68ddb3c24e87acee16534da12f96862aae1140
   color: #1d1814;
   background-color: yellow;
   border: 1px solid #1d1814;
